@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
+        integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="main-app">
+        <nav>
+            <h1>The Movie Store</h1>
+            <input type="text" name="movie-name" id="query-input" class="query-input" placeholder="Enter Movie name">
+            <button onclick="searchMovieHandler()" class="search-btn">Search</button>
+        </nav>
+
+        <main>
+            <h1>Movies List</h1>
+            <div class="movie-box">
+
+                <div id="inner-movie-box">
+                    <h2>Search Movie</h2>
+                    <ul id="movies-list">
+                    </ul>
+                </div>
+
+                <div id="inner-fav-movie-box">
+                    <h2>Favourite Movies</h2>
+                    <div class="favourite-movie-btn">
+                        <button id="favourite-toggle" onclick="addFavouritesMovieToList()">Favourite Movie</button>
+                    </div>
+                    <ul id="fav-movies-list">
+                    </ul>
+                </div>
+
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

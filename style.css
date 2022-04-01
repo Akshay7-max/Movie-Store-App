@@ -1,0 +1,125 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    background: #00f260;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #00f260, #0575e6);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #00f260, #0575e6);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.main-app {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.query-input {
+    padding: 1rem;
+    width: 20%;
+    border-radius: 10px;
+    border: none;
+    background-color: rgba(240, 248, 255, 0.432);
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.query-input:focus {
+    background-color: white;
+}
+
+.search-btn {
+    background: none;
+    padding: 10px;
+    width: 100px;
+    border-radius: 10px;
+    border: 1px solid black;
+    background-color: rgba(255, 242, 240, 0.521);
+    font-size: 1rem;
+}
+
+main>h1 {
+    text-align: center;
+}
+
+.movie-box {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+#inner-movie-box,
+#inner-fav-movie-box {
+    width: 50%;
+}
+
+#inner-movie-box>h2,
+#inner-fav-movie-box>h2 {
+    text-align: center;
+}
+
+.favourite-movie-btn{
+    display: flex;
+    justify-content: center;
+}
+
+#favourite-toggle {
+    background: none;
+    padding: 10px;
+    width: 150px;
+    border-radius: 10px;
+    border: 1px solid black;
+    background-color: rgba(255, 242, 240, 0.521);
+    font-size: 1rem;
+}
+
+#movies-list,
+#fav-movies-list {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+img {
+    display: block;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+li {
+    margin-bottom: 20px;
+}
+
+li>div {
+    height: 40px;
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+li button {
+    background: none;
+    border: none;
+    font-size: 25px;
+    color: white;
+    cursor: pointer;
+}
